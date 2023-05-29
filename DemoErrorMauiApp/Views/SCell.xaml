@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DemoErrorMauiApp.Views.SCell"
+        xmlns:local="clr-namespace:DemoErrorMauiApp.ViewModels"
+        xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    <StackLayout>
+        <Border Stroke="Black" StrokeThickness="1">
+            <toolkit:UniformItemsLayout BindableLayout.ItemsSource="{Binding Candidates}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding}" />
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </toolkit:UniformItemsLayout>
+        </Border>
+    </StackLayout>
+</ContentView>
