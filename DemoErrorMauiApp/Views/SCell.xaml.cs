@@ -14,6 +14,6 @@ public partial class SCell : ContentView
 
         //Following runs without error
         //BindingContext = new SCellViewModel { Candidates = new List<string> {""} };
-
+        //BindingContext = new SCellViewModel { Candidates = new List<string> {"1","Q","-8"} };
     }
 }
